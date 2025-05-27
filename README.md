@@ -103,17 +103,11 @@ DB_USERNAME=your_username
 DB_PASSWORD=your_password
 ```
 
-Or use SQLite:
-
-```env
-DB_CONNECTION=sqlite
-DB_DATABASE=/absolute/path/to/database.sqlite
-```
-
 ### 5. Run Migrations
 
 ```bash
 php artisan migrate
+php artisan migrate:fresh --seed
 ```
 
 ### 6. Start the Application
@@ -222,19 +216,10 @@ php artisan view:cache
 
 For testing purposes, you can create an admin user:
 
-```bash
-php artisan tinker
-User::create([
-    'name' => 'Admin User',
-    'email' => 'admin@taskmanager.com',
-    'password' => Hash::make('password123')
-]);
-```
-
 **Demo Login:**
 
--   Email: `admin@taskmanager.com`
--   Password: `password123`
+-   Email: `admin@demo.com`
+-   Password: `password`
 
 ## 📚 API Documentation
 

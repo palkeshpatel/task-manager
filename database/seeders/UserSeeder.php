@@ -23,8 +23,8 @@ class UserSeeder extends Seeder
 
         // Create demo regular user
         User::create([
-            'name' => 'John Doe',
-            'email' => 'john@demo.com',
+            'name' => 'palkeshpatel',
+            'email' => 'palkeshpatel@demo.com',
             'password' => Hash::make('password'),
             'email_verified_at' => now(),
         ]);
